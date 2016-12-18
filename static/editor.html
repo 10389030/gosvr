@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Editor</title>
+    <meta charset='utf-8' /> 
+
+    <!-- load basic lib jquery -->
+    <script type='text/javascript' src="/jquery/jquery.min.js"></script>
+
+    <!-- load codemirror lib -->
+    <script type='text/javascript' src="/codemirror/codemirror.min.js"></script>
+    <script type='text/javascript' src="/codemirror/markdown.min.js"></script>
+    <script type='text/javascript' src="/codemirror/codemirror.custom.js"></script>
+    <link type='text/css' rel='stylesheet' href='/codemirror/codemirror.min.css' />
+    <link type='text/css' rel='stylesheet' href='/codemirror/solarized.min.css' />
+
+    <!-- load font-awsome lib -->
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- qiniu -->
+    <script type='text/javascript' src="/plupload/moxie.min.js"></script>
+    <script type='text/javascript' src="/plupload/plupload.min.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.min.js"></script>
+		<script type="text/javascript" src="/plupload/upload_client.js"></script>
+
+    <!-- customer theme -->
+    <link type='text/css' rel='stylesheet' href='theme.css' />
+
+  </head>
+  <body>
+    <div class="content cm-s-solarized cm-s-dark">
+      <div class="toolbar CodeMirror-selected">
+        <div class='row'>
+          <div class="col col_left">
+            <span id="filename" data-filename="">编辑中文件名</span>
+          </div>
+          <div>
+            <span id="file_status" data-chechsum="">latest saveing: ....</span>
+          </div>
+        </div>
+      </div>
+      <div class="row row_content">
+        <div class="col col_left">
+					<div class="item" id="upload" style="">
+						<div id="select_file" style="height: 100%; font-size: 20px; padding: 30px; text-align: center;">+</div>
+					</div>
+        </div>
+        <div class="col col_right">
+          <textarea class='code_editor'>## textarea</textarea>
+        </div>
+      </div>
+      <div />
+    </div>
+  </body>
+</html>

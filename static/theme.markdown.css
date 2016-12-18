@@ -1,0 +1,16 @@
+.markdown {
+  letter-spacing: normal;  
+  line-break: auto;
+  word-break: normal;
+  word-spacing: normal;
+}
+
+
+.markdown pre {
+  tab-size: 4;
+}
+
+p {
+  text-indent: 0px;
+  white-space: pre-line;
+}
